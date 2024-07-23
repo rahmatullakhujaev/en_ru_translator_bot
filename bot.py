@@ -77,7 +77,7 @@ async def send_def(message: types.Message):
     #         else:
     #             await message.reply('So\'z topilmadi')
     lang = translator.detect(message.text).lang
-    dest = 'uz' if lang == 'en' else 'en'
+    dest = 'ru' if lang == 'en' else 'ru'
     await message.reply(translator.translate(message.text, dest).text)
 
 
